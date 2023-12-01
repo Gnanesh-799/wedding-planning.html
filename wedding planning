@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="checklist.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/55e1b13435.js" crossorigin="anonymous"></script>
+        <title>NEW WAVE WEDDING PLANNING</title>
+        
+            
+        </a>
+    </head>
+    <body>
+        <img src="https://images.unsplash.com/photo-1545232979-8bf68ee9b1af?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%">
+        <div class="container">
+            <h1 class="name">NEW WAVE WEDDING PLANNING</h1>
+            <P>Lets Plan Our Big Day Stress Free</P>
+            <div class="form_box" >
+               <h2 id="title">Sign Up</h2>
+               <form>
+                <div class="input_group">
+                <div class="input_feild" id="namefield">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" placeholder="Name" name="name">
+                </div>
+                <div class="input_feild">
+                <i class="fa-solid fa-envelope"></i>
+                <input type="email" placeholder="Email" name="email">
+                </div>
+                <div class="input_feild">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" placeholder="password" name="password">
+                </div>
+                <div class="btn-field">
+                    <button type="button" id="signupbtn">Sign Up</button>
+                    <button type="button" class="disable" id="signinbtn">Sign In</button>
+                    <link rel="2nd.css" href="2.html"><a href="2.html">Direct Page</a>
+
+            </div>
+            </form>
+            </div>
+            </div>
+        </div>
+        <script>
+            let signupbtn = document.getElementById("signupbtn")
+            let signinbtn = document.getElementById("signinbtn")
+            let namefield = document.getElementById("namefield")
+            let title = document.getElementById("title")
+
+
+
+            signinbtn.onclick=function(){
+                namefield.style.maxHeight = "0";
+                title.innerHTML = "Sign In";
+                signupbtn.classList.add("disable");
+                signinbtn.classList.remove("disable");
+            }
+            signupbtn.onclick=function(){
+                namefield.style.maxHeight = "60px";
+                title.innerHTML = "Sign Up";
+                signupbtn.classList.remove("disable");
+                signinbtn.classList.add("disable");
+            }
+                   </script>
+    </body>
+</html> 
+
